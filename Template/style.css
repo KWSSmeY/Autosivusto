@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+}
+
+#autot-list {
+    color: black;
+    font-size: 20px;
+    
+}
+.nav-bar {
+    background-color: gray;
+    width: 100%;
+    height: 100px;
+}
+
+
+.nav-bar h1 {
+    color: black;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+
+.list {
+    gap: 10px;
+    display: flex;
+    font-family: 'Montserrat';
+    background-color: black;
+    color: white;
+}
+
+.list h1 {
+    margin: 10px;
+}
+a {
+    color: white;
+}
+
+h1{
+    font-family: 'Montserrat';
+}
+#auto {
+    font-family: 'Montserrat';
+    width: fit-content;
+    margin: 20px;
+}
+
+#form {
+    color: black;
+    width: 400px;
+    margin: 20px;
+    font-size: 21px;
+}
+
+#form input {
+    display: inline;
+    float: right;
+}
+
+#hae-form {
+    margin: 10px;
+    font-size: 15px;
+}
+
+#hae-form input {
+    font-size: 20px;
+    width: 40px;
+}

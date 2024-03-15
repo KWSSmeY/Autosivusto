@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <h1><a href="/">Autosivusto</a></h1>
+    </div>
+    <div class="list">
+        <h1><a href="/autot">Autolista</a></h1> <!-- Link to fetch autot data -->
+        <br>
+        <h1><a href="/lisaa-auto">Lisää auto</a></h1>
+    </div>
+    <div id="auto">
+        <h1>Autot</h1>
+        <h1 id="autot-list"></h1>
+    </div>
+
+    <!-- Client-side JavaScript to fetch and display autot data -->
+    <script>
+        fetch('/auto-lista')
+            .then(response => response.json())
+            .then(data => {
+                const autotList = document.getElementById('autot-list');
+                data.forEach(auto => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${auto.id}, ${auto.merkki}, ${auto.malli}, ${auto.vuosimalli}, ${auto.omistaja}`;
+                    autotList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching autot data:', error));
+    </script>
+    
+</body>
+</html>
+ 

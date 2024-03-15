@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <script src="lisaa-auto.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <h1><a href="/">Autosivusto</a></h1>
+    </div>
+    <div class="list">
+        <h1><a href="/autot">Autolista</a></h1> <!-- Link to fetch autot data -->
+        <br>
+        <h1><a href="/lisaa-auto">Lisää auto</a></h1>
+    </div>   
+    <div>
+        <form id="form">
+            <h1>Lisää auto</h1><br>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required><br><br>
+
+            <label for="merkki">Merkki:</label>
+            <input type="text" id="merkki" name="merkki" required><br><br>
+            
+            <label for="malli">Malli:</label>
+            <input type="text" name="malli" id="malli" required><br><br>
+            
+            <label for="vuosimalli">Vuosimalli:</label>
+            <input type="number" id="vuosimalli" name="vuosimalli" required><br><br>
+
+            <label for="omistaja">Omistaja:</label>
+            <input type="text" id="omistaja" name="omistaja" required><br><br>
+
+            <button type="submit">Lisää auto</button>
+        </form>
+    </div>
+</body>
+</html>
+ 
