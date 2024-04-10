@@ -12,7 +12,7 @@
         <h1><a href="/">Autosivusto</a></h1>
     </div>
     <div class="list">
-        <h1><a href="/autot">Autolista</a></h1> <!-- Link to fetch autot data -->
+        <h1><a href="/autot">Autolista</a></h1>
         <br>
         <h1><a href="/lisaa-auto">Lisää auto</a></h1>
     </div>
@@ -21,7 +21,6 @@
         <h1 id="autot-list"></h1>
     </div>
 
-    <!-- Client-side JavaScript to fetch and display autot data -->
     <script>
         fetch('/auto-lista')
             .then(response => response.json())

@@ -27,7 +27,7 @@ function getValue(event) {
   })
   .then(response => response.json())
   .then(data => {
-    console.log('Uusi rivi lisätty tiedostoon.');
+    alert('Uusi rivi lisätty tiedostoon.');
   })
   .catch((error) => {
     console.error('Virhe:', error);

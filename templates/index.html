@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto sivusto</title>
+  <script src="/inc/front.js"></script>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <h1>Autojen hallinta</h1>
+  
+  <h2>Lisää uusi auto:</h2>
+  <form id="lisaaAutoForm" onsubmit="lisääAuto(event)">
+    <label for="Id">Id:</label>
+    <input type="text" id="id" name="id" required><br><br>
+
+    <label for="merkki">Merkki:</label>
+    <input type="text" id="merkki" name="merkki" required><br><br>
+
+    <label for="malli">Malli:</label>
+    <input type="text" id="malli" name="malli" required><br><br>
+
+    <label for="vuosimalli">Vuosimalli:</label>
+    <input type="number" id="vuosimalli" name="vuosimalli" required><br><br>
+
+    <label for="omistaja">Omistaja:</label>
+    <input type="text" id="omistaja" name="omistaja" required><br><br>
+
+    <button type="submit">Lisää auto</button>
+  </form>
+
+  <h2>Hae autoa:</h2>
+  <label for="Id">Anna auton ID:</label>
+  <input type="number" id="Id" name="Id" required>
+  <button onclick="haeAuto()">Hae auto</button>
+
+  <h2>Kaikki autot:</h2>
+  <button onclick="haeKaikkiAutot()">Näytä kaikki autot</button>
+  <div id="Tulos"></div>
+</body>
+</html>
